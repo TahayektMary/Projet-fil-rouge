@@ -1,0 +1,387 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #fcfcfc;
+            min-height: 100vh;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 232px;
+            background-color: #017960;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-container {
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            max-width: 120px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .nav-menu {
+            margin-top: 32px;
+            padding: 0 16px;
+            flex: 1;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .nav-item.active {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-input {
+            padding: 8px 12px 8px 40px;
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+            width: 320px;
+            font-size: 14px;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #017960;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            color: #828282;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .language-select {
+            padding: 8px 12px;
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+            background: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .notification-bell {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .notification-dot {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 12px;
+            height: 12px;
+            background-color: #db1c1c;
+            border-radius: 50%;
+        }
+
+        .association-logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .page-content {
+            flex: 1;
+            padding: 32px;
+        }
+
+        .content-container {
+            max-width: 512px;
+            margin: 0 auto;
+        }
+
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+
+        .page-title {
+            font-size: 30px;
+            font-weight: bold;
+            color: #017960;
+        }
+
+        .print-button {
+            padding: 8px;
+            border: 1px solid #d9d9d9;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+
+        .card-image {
+            width: 192px;
+            height: 128px;
+            background: linear-gradient(135deg, #6fcf97 0%, #017960 100%);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            color: #383c3e;
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-input {
+            padding: 12px;
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #017960;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 32px;
+            margin-top: 16px;
+        }
+
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .radio-input {
+            width: 16px;
+            height: 16px;
+            accent-color: #017960;
+        }
+
+        .radio-label {
+            color: #383c3e;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .submit-button {
+            width: 100%;
+            background-color: #017960;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 32px;
+            transition: background-color 0.2s;
+        }
+
+        .submit-button:hover {
+            background-color: #14ae5c;
+        }
+
+        .icon-stroke {
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fcfcfc;
+    min-height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 232px;
+    background-color: #017960;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 120px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.nav-menu {
+    margin-top: 32px;
+    padding: 0 16px;
+    flex: 1;
+} */
+
+/* Reste de votre CSS inchangé */
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .content-container {
+        max-width: 400px;
+    }
+
+    .search-input {
+        width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        margin: 0;
+        padding: 8px;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .nav-item {
+        font-size: 12px;
+        padding: 8px;
+        flex: 1;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 80px;
+        height: 50px;
+    }
+
+    .nav-item {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 100%;
+        height: auto;
+    }
+}
